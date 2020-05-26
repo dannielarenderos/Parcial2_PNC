@@ -39,7 +39,7 @@ public class Libro{
 	@Column(name="s_autor")
 	private String s_autor;
 	
-	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	@DateTimeFormat(pattern = "dd/MM/yyyy hh:mm")
 	@Column(name = "f_ingreso")
 	private Date f_ingreso;
 	
@@ -135,7 +135,7 @@ public class Libro{
 	}
 
 	public String getFingresoDelegate() {
-		SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy hh:mm");
 		return formato.format(f_ingreso);
 		
 	}
