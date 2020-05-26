@@ -18,7 +18,7 @@
 				<span th:errors="${libro.s_isbn}" style="color:  #E81505;"></span><br>
 		
 		
-		<label>Activo:</label>
+		<label>Estado:</label>
 			<input type="radio" th:field="${libro.b_estado}" th:value = "${true}">
 
 		
@@ -33,6 +33,5 @@
 		<input type="submit" value="Guardar">
 	</form>
 
-	<input type="button" value="Ver Libros" onclick="location.href='./index'" />
 </body>
 </html></html>

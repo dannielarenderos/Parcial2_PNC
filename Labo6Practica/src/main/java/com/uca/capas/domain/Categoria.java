@@ -24,7 +24,7 @@ public class Categoria {
 	@Column(name="c_categoria")
 	private Integer c_categoria;
 	
-	@NotEmpty(message="“El campo nombre categoría no puede estar vacío")
+	@NotEmpty(message="El campo nombre categoría no puede estar vacío")
 	@Size(message="El campo sobrepasa la cantidad de 50 caracteres", max=50)
 	@Column(name="s_categoria")
 	private String s_categoria;
